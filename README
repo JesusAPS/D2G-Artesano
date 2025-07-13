@@ -1,0 +1,26 @@
+# D2G Artesano
+
+Plataforma de e-commerce para cursos y productos, con backend en NestJS y frontend en Angular.
+
+## Estructura
+- **d2g-artesano-backend/**: Backend con NestJS, Prisma, PostgreSQL, TypeScript y DDD.
+- **d2g-artesano-frontend/**: Frontend con Angular, TypeScript y Angular Material.
+
+## Instalación
+
+### Backend
+1. Navegar a `d2g-artesano-backend/`.
+2. Instalar dependencias: `npm install`.
+3. Configurar `.env` con la URL de la base de datos.
+4. Iniciar PostgreSQL: `docker-compose up -d`.
+5. Generar Prisma: `npx prisma generate`.
+6. Iniciar el servidor: `npm run start:dev`.
+
+### Frontend
+1. Navegar a `d2g-artesano-frontend/`.
+2. Instalar dependencias: `npm install`.
+3. Iniciar el servidor: `ng serve`.
+
+## Tecnologías
+- **Backend**: NestJS, Prisma, PostgreSQL, TypeScript, Docker.
+- **Frontend**: Angular, TypeScript, Angular Material.
