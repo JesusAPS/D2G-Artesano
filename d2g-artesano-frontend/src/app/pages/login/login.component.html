@@ -1,0 +1,63 @@
+<!-- login.component.html -->
+
+<main class="auth-container">
+  <section class="auth-card">
+    <h2>Iniciar Sesión</h2>
+
+    <!-- Formulario de login -->
+    <form>
+      <!-- Correo -->
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="ejemplo@correo.com" 
+          required 
+        />
+      </div>
+
+      <!-- Contraseña -->
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="********" 
+          required 
+        />
+      </div>
+
+      <!-- Recordar sesión -->
+      <div class="form-options">
+        <label>
+          <input type="checkbox" name="remember" />
+          Recuérdame
+        </label>
+        <a href="/recuperar-password">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <!-- Botón -->
+      <button type="submit" class="btn-login">Entrar</button>
+    </form>
+
+    <!-- Separador -->
+    <div class="divider">
+      <span>o</span>
+    </div>
+
+    <!-- Login social (opcional futuro) -->
+    <div class="social-login">
+      <button class="btn-google">Continuar con Google</button>
+      <button class="btn-facebook">Continuar con Facebook</button>
+    </div>
+
+    <!-- Enlace a registro -->
+    <p class="auth-footer">
+      ¿No tienes cuenta?
+      <a href="/register">Regístrate aquí</a>
+    </p>
+  </section>
+</main>

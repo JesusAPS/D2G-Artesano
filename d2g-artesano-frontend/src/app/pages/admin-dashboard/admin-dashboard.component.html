@@ -1,0 +1,17 @@
+<section>
+  <h1>Panel de Administración</h1>
+
+  <nav>
+    <ul>
+      <li><a routerLink="/admin/users">Usuarios</a></li>
+      <li><a routerLink="/admin/cursos">Cursos</a></li>
+      <li><a routerLink="/admin/productos">Productos</a></li>
+      <li><a routerLink="/admin/ventas">Ventas</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <!-- Aquí debajo se mostrará la vista activa (usuarios, cursos, etc.) -->
+    <router-outlet></router-outlet>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Panel</h2>
+    <nav>
+      <ul>
+        <li><a routerLink="/perfil">👤 Mi Perfil</a></li>
+        <li><a routerLink="/instructor/1">📚 Zona Instructor</a></li>
+        <li><a routerLink="/admin">⚙️ Admin Dashboard</a></li>
+        <li><a routerLink="/home">🏠 Volver al inicio</a></li>
+        <li><a routerLink="/logout">🚪 Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

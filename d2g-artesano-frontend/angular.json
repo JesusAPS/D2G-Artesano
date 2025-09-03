@@ -27,15 +27,9 @@
               }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -91,7 +85,6 @@
               }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -101,6 +94,6 @@
     }
   },
   "cli": {
-    "analytics": "6a3d7fc1-6cd6-430d-93d9-bcd165f6be18"
+    "analytics": "0431b036-1e9e-472b-9c06-dc100f11203a"
   }
 }
