@@ -1,22 +1,28 @@
-<section>
-  <h1>Perfil de Instructor</h1>
+<!-- instructor-profile.component.html -->
 
-  <div>
-    <h2>Información personal</h2>
-    <p>[Nombre del instructor]</p>
-    <p>[Correo]</p>
-  </div>
+<main class="instructor-container">
+  <section class="instructor-header">
+    <h1>Zona del Instructor</h1>
+    <p>Gestiona tus cursos y alumnos.</p>
+  </section>
 
-  <div>
-    <h2>Mis cursos</h2>
+  <section class="instructor-info">
+    <h2>Mis Datos</h2>
+    <p><strong>Nombre:</strong> Instructor X</p>
+    <p><strong>Especialidad:</strong> Meditación</p>
+  </section>
+
+  <section class="instructor-courses">
+    <h2>Mis Cursos Publicados</h2>
     <ul>
-      <li>[Curso impartido 1]</li>
-      <li>[Curso impartido 2]</li>
+      <li>Curso de Mindfulness</li>
+      <li>Yoga para Principiantes</li>
     </ul>
-  </div>
+    <button>+ Crear nuevo curso</button>
+  </section>
 
-  <div>
-    <button>Editar perfil</button>
-    <button>Crear nuevo curso</button>
-  </div>
-</section>
+  <section class="instructor-students">
+    <h2>Mis Estudiantes</h2>
+    <p>Total de inscritos: 120</p>
+  </section>
+</main>

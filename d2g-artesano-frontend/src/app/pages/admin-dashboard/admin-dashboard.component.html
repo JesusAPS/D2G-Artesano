@@ -1,17 +1,49 @@
-<section>
-  <h1>Panel de Administración</h1>
+<!-- admin-dashboard.component.html -->
 
-  <nav>
-    <ul>
-      <li><a routerLink="/admin/users">Usuarios</a></li>
-      <li><a routerLink="/admin/cursos">Cursos</a></li>
-      <li><a routerLink="/admin/productos">Productos</a></li>
-      <li><a routerLink="/admin/ventas">Ventas</a></li>
-    </ul>
-  </nav>
+<main class="admin-dashboard">
+  <section class="dashboard-header">
+    <h1>Panel de Administración</h1>
+  </section>
 
-  <div>
-    <!-- Aquí debajo se mostrará la vista activa (usuarios, cursos, etc.) -->
-    <router-outlet></router-outlet>
-  </div>
-</section>
+  <section class="dashboard-stats">
+    <div class="stat-card">
+      <h3>Total de Usuarios</h3>
+      <p>450</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total de Cursos</h3>
+      <p>35</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Ventas</h3>
+      <p>$1,200</p>
+    </div>
+  </section>
+
+  <section class="dashboard-users">
+    <h2>Usuarios Registrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Rol</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Juan Pérez</td>
+          <td>juan%40correo.com</td>
+          <td>Estudiante</td>
+        </tr>
+        <tr>
+          <td>Ana López</td>
+          <td>ana%40correo.com</td>
+          <td>Instructor</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>

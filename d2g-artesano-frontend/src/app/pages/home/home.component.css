@@ -1,0 +1,91 @@
+/* HERO */
+.hero {
+  background: linear-gradient(to right, rgba(37,117,252,0.8), rgba(106,17,203,0.8)),
+              url('/assets/banner.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 24px;
+  background: #ffe082;
+  border-radius: 6px;
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #ffca28;
+}
+
+/* SECCIONES GENERALES */
+section {
+  margin: 40px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #2575fc;
+}
+
+/* GRID DE CARDS */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.link-more {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #6a11cb;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.link-more:hover {
+  text-decoration: underline;
+}
+
+/* EXTRA LINKS */
+.extra-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extra-links li {
+  margin: 10px 0;
+}
+
+.extra-links a {
+  text-decoration: none;
+  color: #2575fc;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.extra-links a:hover {
+  color: #6a11cb;
+}

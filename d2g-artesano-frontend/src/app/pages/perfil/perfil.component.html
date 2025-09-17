@@ -1,17 +1,30 @@
-<section>
-  <h1>Mi Perfil</h1>
+<!-- perfil.component.html -->
 
-  <div>
-    <h2>Datos personales</h2>
-    <p>[Nombre completo]</p>
-    <p>[Correo electrónico]</p>
-  </div>
+<main class="profile-container">
+  <section class="profile-header">
+    <h1>Mi Perfil</h1>
+    <p>Bienvenido, [Nombre del usuario]</p>
+  </section>
 
-  <div>
-    <h2>Mis cursos comprados</h2>
+  <section class="profile-info">
+    <h2>Información Personal</h2>
+    <p><strong>Correo:</strong> usuario%40correo.com</p>
+    <p><strong>Fecha de nacimiento:</strong> 01/01/1990</p>
+  </section>
+
+  <section class="profile-courses">
+    <h2>Mis Cursos</h2>
     <ul>
-      <li>[Curso 1]</li>
-      <li>[Curso 2]</li>
+      <li>Curso de Meditación Avanzada</li>
+      <li>Introducción al Yoga</li>
     </ul>
-  </div>
-</section>
+  </section>
+
+  <section class="profile-orders">
+    <h2>Mis Compras</h2>
+    <ul>
+      <li>Producto A - 20$</li>
+      <li>Producto B - 15$</li>
+    </ul>
+  </section>
+</main>

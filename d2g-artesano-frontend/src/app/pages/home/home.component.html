@@ -1,59 +1,34 @@
-<!-- home.component.html -->
+<section class="hero">
+  <h1>Bienvenido a D2G Artesano</h1>
+  <p>Conecta con cursos espirituales y productos especiales.</p>
+  <a routerLink="/cursos" class="btn">Ver Cursos</a>
+  <a routerLink="/productos" class="btn">Ver Productos</a>
+</section>
 
-<!-- Hero principal -->
-<header class="hero">
-  <div class="hero-content">
-    <h1>Bienvenido a D2G Artesano</h1>
-    <p>Explora cursos espirituales y productos que transforman tu vida</p>
-    <button>Explorar cursos</button>
-    <button>Ver productos</button>
+<section class="featured-courses">
+  <h2>Cursos destacados</h2>
+  <div class="card-grid">
+    <app-course-card></app-course-card>
+    <app-course-card></app-course-card>
+    <a routerLink="/cursos" class="link-more">Ver todos los cursos</a>
   </div>
-</header>
+</section>
 
-<main>
-  <!-- Sección de cursos destacados -->
-  <section class="featured-courses">
-    <h2>Cursos destacados</h2>
-    <div class="course-list">
-      <app-course-card></app-course-card>
-      <app-course-card></app-course-card>
-      <app-course-card></app-course-card>
-    </div>
-    <a href="/cursos">Ver todos los cursos</a>
-  </section>
+<section class="featured-products">
+  <h2>Productos destacados</h2>
+  <div class="card-grid">
+    <app-product-card></app-product-card>
+    <app-product-card></app-product-card>
+    <a routerLink="/productos" class="link-more">Ver todos los productos</a>
+  </div>
+</section>
 
-  <!-- Sección de productos destacados -->
-  <section class="featured-products">
-    <h2>Productos destacados</h2>
-    <div class="product-list">
-      <app-product-card></app-product-card>
-      <app-product-card></app-product-card>
-      <app-product-card></app-product-card>
-    </div>
-    <a href="/productos">Ver todos los productos</a>
-  </section>
-
-  <!-- Sección sobre nosotros -->
-  <section class="about">
-    <h2>Sobre nosotros</h2>
-    <p>
-      En D2G Artesano creemos en el crecimiento espiritual, la conexión interior y
-      el valor de los productos artesanales que acompañan tu camino de aprendizaje.
-    </p>
-  </section>
-
-  <!-- Sección de testimonios -->
-  <section class="testimonials">
-    <h2>Testimonios</h2>
-    <div class="testimonial-list">
-      <blockquote>
-        "El curso cambió mi vida, encontré paz y claridad."
-        <cite>- María P.</cite>
-      </blockquote>
-      <blockquote>
-        "Los productos son de excelente calidad y con un gran significado."
-        <cite>- José R.</cite>
-      </blockquote>
-    </div>
-  </section>
-</main>
+<section class="extra-links">
+  <h2>Explora más</h2>
+  <ul>
+    <li><a routerLink="/categorias">Categorías de Cursos</a></li>
+    <li><a routerLink="/nosotros">Sobre Nosotros</a></li>
+    <li><a routerLink="/contacto">Contacto</a></li>
+    <li><a routerLink="/terminos">Términos y Condiciones</a></li>
+  </ul>
+</section>

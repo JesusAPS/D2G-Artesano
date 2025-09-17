@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 //Layout
 import { LayoutPublicComponent } from './layout/layout-public/layout-public.component'; //Componente de layout público
-import { LayoutPrivateComponent } from './layout/layout-private/layout-private.component';{} //Componente de layout privado
+import { LayoutPrivateComponent } from './layout/layout-private/layout-private.component'; //Componente de layout privado
 
 //Paginas Publicas 
 import { HomeComponent } from './pages/home/home.component'; //Componente de la página de inicio
@@ -15,6 +15,8 @@ import { ShopComponent } from './pages/shop/shop.component'; //Componente de la 
 import { ContactComponent } from './pages/contact/contact.component'; //Componente de la página de contacto
 import { NosotrosComponent } from './pages/nosotros/nosotros.component'; //Componente de la página de nosotros
 import { FaqComponent} from './pages/faq/faq.component'; //Componente de la página de preguntas frecuentes
+import { CategoriasComponent } from './pages/categorias/categorias.component'; //Componente de la página de categorías
+import { TerminosComponent } from './pages/terminos/terminos.component'; //Componente de la página de términos y condiciones
 
 //Paginas Privadas 
 import { PerfilComponent } from './pages/perfil/perfil.component'; //Componente de la página de perfil del usuario
@@ -39,7 +41,9 @@ export const routes: Routes = [
       { path: 'register', component: RegisterComponent }, // Ruta para la página de registro
       { path: 'contact', component: ContactComponent }, // Ruta para la página de contacto
       { path: 'nosotros', component: NosotrosComponent }, // Ruta para la página de nosotros
-      { path: 'faq', component: FaqComponent } // Ruta para la página de preguntas frecuentes
+      { path: 'faq', component: FaqComponent }, // Ruta para la página de preguntas frecuentes
+      { path: 'categorias', component: CategoriasComponent}, // Ruta para la página de categorías
+      { path: 'terminos', component: TerminosComponent } // Ruta para la página de términos y condiciones
     ]
   },
 
@@ -55,5 +59,5 @@ export const routes: Routes = [
   },
 
   // Comodín (404)
-  { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'home' } // Redirige a la página de inicio para rutas no definidas
 ];
